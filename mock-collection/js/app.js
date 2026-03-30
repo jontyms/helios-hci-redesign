@@ -27,4 +27,6 @@ function startVoting() {
     error.style.display = "block";
     return;
   }
+  localStorage.setItem("currentVoterID", idInput); // Saves ID for the session
+  goTo("ballot");
 }
